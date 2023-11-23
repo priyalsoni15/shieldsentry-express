@@ -27,6 +27,7 @@ app.post("/register", function (req, res) {
 
     // Create a new user with the form data
     var newUser = { username: username, email: email, password: password };
+    console.log(newUser); //Ignore the plaintext password for now - would be fixed soon
 
     // Handle registration logic (authentication)
     // For now, just a placeholder response; add MongoDB for future implementation
